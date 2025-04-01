@@ -1,96 +1,91 @@
+:root {
+    --background-light: #f0f0f0;
+    --text-dark: #333333;
+    --primary-color: #4A90E2;
+    --link-color: #007BFF;
+    --container-bg: #FFFFFF;
+    --border-highlight: #D9E8FC;
+}
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: white; /* White text */
-    background-color: black; /* Solid black background */
+    color: var(--text-dark);
+    background-color: var(--background-light);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Minimum height to ensure the content is centered vertically */
-    text-align: center; /* Center text */
-    padding-top: 20px; /* Add some padding at the top */
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 20px;
 }
 
+/* Container */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #333; /* Darker background for the container */
+    background: var(--container-bg);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 2px solid #800080; /* Purple border */
+    border: 2px solid var(--border-highlight);
 }
 
+/* Headings */
 h1,
 h2 {
-    color: #800080; /* Purple text for headings */
+    color: var(--primary-color);
 }
 
+/* Self Portrait */
 .self-portrait-frame {
     display: flex;
     justify-content: center;
-    margin: 20px auto; /* Centered under the header */
-    border: 2px solid #800080; /* Purple border */
-    border-radius: 50%; /* Circular frame */
+    margin: 20px auto;
+    border: 2px solid var(--border-highlight);
+    border-radius: 50%;
     padding: 5px;
-    width: 110px; /* Adjust the size as needed */
-    height: 110px; /* Adjust the size as needed */
-    background-color: #333; /* Match container background */
+    width: 110px;
+    height: 110px;
+    background-color: var(--container-bg);
 }
 
 .self-portrait {
-    border-radius: 50%; /* Circular portrait */
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
-.header {
-    text-align: center;
-}
-
-.header h1 {
-    margin: 10px 0;
-}
-
-.contact {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
+/* Contact Links */
 .contact a {
-    color: #800080; /* Purple text for links */
+    color: var(--link-color);
     text-decoration: none;
 }
 
-.section {
-    margin: 20px 0;
-}
-
+/* Section Headings */
 .section h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #800080; /* Purple border for headings */
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 5px;
 }
 
-.item {
-    margin-bottom: 15px;
-}
-
+/* Items */
 .item h3 {
     margin: 0;
     font-size: 18px;
-    color: #d4d4d4; /* Lighter gray for subheadings */
+    color: var(--text-dark);
 }
 
 .item p {
     margin: 5px 0;
     font-size: 14px;
-    color: #d4d4d4; /* Lighter gray for paragraph text */
+    color: var(--text-dark);
 }
 
+/* Skills */
 .skills ul {
     list-style: none;
     padding: 0;
@@ -98,19 +93,20 @@ h2 {
 
 .skills ul li {
     display: inline-block;
-    background: #800080; /* Purple background */
-    color: white; /* White text */
+    background: var(--primary-color);
+    color: var(--container-bg);
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
 }
 
+/* Social Button */
 .social__btn {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #800080; /* Purple background for button */
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--container-bg);
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -118,15 +114,23 @@ h2 {
     cursor: pointer;
     font-size: 24px;
     text-align: center;
-    line-height: 50px; /* Center icon vertically */
+    line-height: 50px;
     transition: all 0.3s ease-out;
 }
 
 .social__btn:hover {
-    background-color: #4b0082; /* Darker purple on hover */
+    background-color: var(--link-color);
 }
 
 
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
 
 
 
