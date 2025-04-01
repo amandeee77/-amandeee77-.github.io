@@ -121,8 +121,30 @@ h2 {
 .social__btn:hover {
     background-color: var(--link-color);
 }
+/*Projects Section*/
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
 
+.projects ul li {
+    display: inline-block;
+    background: var(--primary-color); /* Matches Skills section color */
+    color: var(--container-bg); /* White text */
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px; /* Smooth corners */
+}
 
+.projects ul li a {
+    color: var(--container-bg); /* White text for the link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.projects ul li:hover {
+    background: var(--link-color); /* Hover color matches the Skills section hover */
+}
 @media screen and (max-width: 768px) {
     .container {
         padding: 10px;
