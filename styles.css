@@ -106,8 +106,8 @@
     background: var(--link-color);
   }
   
-  /* Social Buttons Container */
-  .social-buttons {
+/* Social Buttons Container */
+.social-buttons {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -120,7 +120,7 @@
   /* Social Button */
   .social__btn {
     background-color: var(--primary-color);
-    color: var(--container-bg);
+    color: #000000; /* Text color set to black */
     border: none;
     border-radius: 50%;
     width: 50px;
