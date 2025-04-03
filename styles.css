@@ -5,10 +5,10 @@
     --link-color: #007BFF;
     --container-bg: #FFFFFF;
     --border-highlight: #D9E8FC;
-}
-
-/* General Styles */
-body {
+  }
+  
+  /* General Styles */
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -21,10 +21,10 @@ body {
     min-height: 100vh;
     text-align: center;
     padding-top: 20px;
-}
-
-/* Container */
-.container {
+  }
+  
+  /* Container */
+  .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -32,60 +32,93 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 2px solid var(--border-highlight);
-}
-
-/* Headings */
-h1,
-h2 {
+  }
+  
+  /* Headings */
+  h1,
+  h2 {
     color: var(--primary-color);
-}
-
-/* Contact Links */
-.contact a {
+  }
+  
+  /* Contact Links */
+  .contact a {
     color: var(--link-color);
     text-decoration: none;
-}
-
-/* Section Headings */
-.section h2 {
+  }
+  
+  /* Section Headings */
+  .section h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 5px;
-}
-
-/* Items */
-.item h3 {
+  }
+  
+  /* Items */
+  .item h3 {
     margin: 0;
     font-size: 18px;
     color: var(--text-dark);
-}
-
-.item p {
+  }
+  
+  .item p {
     margin: 5px 0;
     font-size: 14px;
     color: var(--text-dark);
-}
-
-/* Skills */
-.skills ul {
+  }
+  
+  /* Skills */
+  .skills ul {
     list-style: none;
     padding: 0;
-}
-
-.skills ul li {
+  }
+  
+  .skills ul li {
     display: inline-block;
     background: var(--primary-color);
     color: var(--container-bg);
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
-}
-
-/* Social Button */
-.social__btn {
+  }
+  
+  /* Projects Section */
+  .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects ul li {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--container-bg);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
+  }
+  
+  .projects ul li a {
+    color: var(--container-bg);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .projects ul li:hover {
+    background: var(--link-color);
+  }
+  
+  /* Social Buttons Container */
+  .social-buttons {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+  }
+  
+  /* Social Button */
+  .social__btn {
     background-color: var(--primary-color);
     color: var(--container-bg);
     border: none;
@@ -97,43 +130,21 @@ h2 {
     text-align: center;
     line-height: 50px;
     transition: all 0.3s ease-out;
-}
-
-.social__btn:hover {
+  }
+  
+  .social__btn:hover {
     background-color: var(--link-color);
-}
-/*Projects Section*/
-.projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-.projects ul li {
-    display: inline-block;
-    background: var(--primary-color); /* Matches Skills section color */
-    color: var(--container-bg); /* White text */
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px; /* Smooth corners */
-}
-
-.projects ul li a {
-    color: var(--container-bg); /* White text for the link */
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text for emphasis */
-}
-
-.projects ul li:hover {
-    background: var(--link-color); /* Hover color matches the Skills section hover */
-}
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .container {
-        padding: 10px;
+      padding: 10px;
     }
     h1 {
-        font-size: 24px;
+      font-size: 24px;
     }
-}
+  }
+  
 
 
 
